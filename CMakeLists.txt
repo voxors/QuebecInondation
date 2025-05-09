@@ -4,7 +4,6 @@ project(plasma-quebecinondation)
 
 set(QT_MIN_VERSION "6.7.0")
 set(KF6_MIN_VERSION "6.0.0")
-set(CMAKE_AUTOMOC ON)
 
 find_package(ECM ${KF6_MIN_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH ${ECM_MODULE_PATH})

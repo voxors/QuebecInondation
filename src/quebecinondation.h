@@ -22,6 +22,7 @@ public:
     ~QuebecInondation();
 
     QString nativeText() const;
+    Q_SLOT void refresh();
 
 private:
     QString m_nativeText;
