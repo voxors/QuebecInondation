@@ -1,5 +1,6 @@
 {
     "KPackageStructure": "Plasma/Applet",
+    "X-Plasma-API-Minimum-Version": "6.0",
     "KPlugin": {
         "Authors": [
             {
@@ -102,7 +103,7 @@
         "Description[zh_CN]": "用一个短句概括您的小程序的功能",
         "Description[zh_TW]": "幾個詞內簡述您的應用程式所做的事",
         "Icon": "applications-system",
-        "Id": "org.kde.plasma.quebecinondation",
+        "Id": "quebecinondation.github.com",
         "License": "LGPL-2.1+",
         "Name": "QuebecInondation",
         "Name[ar]": "%{اسم_التطبيق}",

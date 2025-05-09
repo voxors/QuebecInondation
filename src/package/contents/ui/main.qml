@@ -9,8 +9,9 @@ import org.kde.plasma.plasmoid
 import org.kde.plasma.components as PlasmaComponents3
 
 
-Item {
-    Plasmoid.fullRepresentation: ColumnLayout {
+PlasmoidItem {
+    id: root
+    fullRepresentation: ColumnLayout {
         anchors.fill: parent
         Image {
             Layout.fillHeight: true
@@ -20,7 +21,7 @@ Item {
         }
         PlasmaComponents3.Label {
             Layout.alignment: Qt.AlignCenter
-            text: Plasmoid.nativeInterface.nativeText
+            text: Plasmoid.nativeText
         }
     }
 }
