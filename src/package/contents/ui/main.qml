@@ -19,7 +19,12 @@ PlasmoidItem {
             fillMode: Image.PreserveAspectFit
             source: "../images/pairs.svg"
         }
+        Timer {
+            interval: 500; running: true; repeat: true
+            onTriggered: label.text = Plasmoid.nativeText
+        }
         PlasmaComponents3.Label {
+            id : label
             Layout.alignment: Qt.AlignCenter
             text: Plasmoid.nativeText
         }

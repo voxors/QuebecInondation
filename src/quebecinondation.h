@@ -6,6 +6,10 @@
 #ifndef QUEBECINONDATION_H
 #define QUEBECINONDATION_H
 
+#include <QObject>
+#include <QNetworkAccessManager>
+#include <QNetworkReply>
+
 #include <Plasma/Applet>
 
 class QuebecInondation : public Plasma::Applet
@@ -21,6 +25,8 @@ public:
 
 private:
     QString m_nativeText;
+    QNetworkAccessManager* networkManager;
+    Q_SLOT void onDownloadFinished(QNetworkReply* reply);
 };
 
 #endif

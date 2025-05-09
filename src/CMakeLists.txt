@@ -1,11 +1,12 @@
 add_definitions(-DTRANSLATION_DOMAIN=\"quebecinondation.github.com\")
 
-add_library(quebecinondation.github.com MODULE quebecinondation.cpp
-                      quebecinondation.h
-                      package/contents/images/pairs.svg package/contents/ui/main.qml package/metadata.json CMakeLists.txt quebecinondation.cpp quebecinondation.h)
+add_library(quebecinondation.github.com MODULE quebecinondation.cpp)
+
+set(CMAKE_AUTOMOC ON)
 
 target_link_libraries(quebecinondation.github.com
                       Qt6::Gui
+                      Qt6::Network
                       Plasma::Plasma
                       KF6::I18n)
 
